@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		3DE1F4C52901A3A100C85189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4C42901A3A100C85189 /* AppDelegate.swift */; };
 		3DE1F4C72901A3A100C85189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4C62901A3A100C85189 /* SceneDelegate.swift */; };
-		3DE1F4C92901A3A100C85189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4C82901A3A100C85189 /* ViewController.swift */; };
+		3DE1F4C92901A3A100C85189 /* ContactosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4C82901A3A100C85189 /* ContactosController.swift */; };
 		3DE1F4CC2901A3A100C85189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1F4CA2901A3A100C85189 /* Main.storyboard */; };
 		3DE1F4CE2901A3A400C85189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1F4CD2901A3A400C85189 /* Assets.xcassets */; };
 		3DE1F4D12901A3A400C85189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE1F4CF2901A3A400C85189 /* LaunchScreen.storyboard */; };
 		3DE1F4DC2901A3A500C85189 /* practicaContactosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4DB2901A3A500C85189 /* practicaContactosTests.swift */; };
 		3DE1F4E72901A3A500C85189 /* practicaContactosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4E62901A3A500C85189 /* practicaContactosUITests.swift */; };
+		3DE1F4F62901A67E00C85189 /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4F52901A67E00C85189 /* Contacto.swift */; };
+		3DE1F4F92901AA6F00C85189 /* CeldaContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4F82901AA6F00C85189 /* CeldaContactoController.swift */; };
+		3DE1F4FB2901AD3700C85189 /* AgregarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4FA2901AD3700C85189 /* AgregarContactoController.swift */; };
+		3DE1F4FE2901B28C00C85189 /* EditarContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1F4FD2901B28C00C85189 /* EditarContactoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		3DE1F4C12901A3A100C85189 /* practicaContactos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practicaContactos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE1F4C42901A3A100C85189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE1F4C62901A3A100C85189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DE1F4C82901A3A100C85189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE1F4C82901A3A100C85189 /* ContactosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosController.swift; sourceTree = "<group>"; };
 		3DE1F4CB2901A3A100C85189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DE1F4CD2901A3A400C85189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE1F4D02901A3A400C85189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		3DE1F4E22901A3A500C85189 /* practicaContactosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practicaContactosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE1F4E62901A3A500C85189 /* practicaContactosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practicaContactosUITests.swift; sourceTree = "<group>"; };
 		3DE1F4E82901A3A500C85189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE1F4F52901A67E00C85189 /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
+		3DE1F4F82901AA6F00C85189 /* CeldaContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoController.swift; sourceTree = "<group>"; };
+		3DE1F4FA2901AD3700C85189 /* AgregarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoController.swift; sourceTree = "<group>"; };
+		3DE1F4FD2901B28C00C85189 /* EditarContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarContactoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,10 @@
 		3DE1F4C32901A3A100C85189 /* practicaContactos */ = {
 			isa = PBXGroup;
 			children = (
+				3DE1F4F72901AA5200C85189 /* Controladores */,
+				3DE1F4F42901A66900C85189 /* Modelos */,
 				3DE1F4C42901A3A100C85189 /* AppDelegate.swift */,
 				3DE1F4C62901A3A100C85189 /* SceneDelegate.swift */,
-				3DE1F4C82901A3A100C85189 /* ViewController.swift */,
 				3DE1F4CA2901A3A100C85189 /* Main.storyboard */,
 				3DE1F4CD2901A3A400C85189 /* Assets.xcassets */,
 				3DE1F4CF2901A3A400C85189 /* LaunchScreen.storyboard */,
@@ -126,6 +135,25 @@
 				3DE1F4E82901A3A500C85189 /* Info.plist */,
 			);
 			path = practicaContactosUITests;
+			sourceTree = "<group>";
+		};
+		3DE1F4F42901A66900C85189 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				3DE1F4F52901A67E00C85189 /* Contacto.swift */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		3DE1F4F72901AA5200C85189 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				3DE1F4C82901A3A100C85189 /* ContactosController.swift */,
+				3DE1F4F82901AA6F00C85189 /* CeldaContactoController.swift */,
+				3DE1F4FA2901AD3700C85189 /* AgregarContactoController.swift */,
+				3DE1F4FD2901B28C00C85189 /* EditarContactoController.swift */,
+			);
+			name = Controladores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE1F4C92901A3A100C85189 /* ViewController.swift in Sources */,
+				3DE1F4FB2901AD3700C85189 /* AgregarContactoController.swift in Sources */,
+				3DE1F4FE2901B28C00C85189 /* EditarContactoController.swift in Sources */,
+				3DE1F4F92901AA6F00C85189 /* CeldaContactoController.swift in Sources */,
+				3DE1F4F62901A67E00C85189 /* Contacto.swift in Sources */,
+				3DE1F4C92901A3A100C85189 /* ContactosController.swift in Sources */,
 				3DE1F4C52901A3A100C85189 /* AppDelegate.swift in Sources */,
 				3DE1F4C72901A3A100C85189 /* SceneDelegate.swift in Sources */,
 			);

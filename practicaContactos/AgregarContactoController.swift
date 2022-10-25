@@ -19,15 +19,15 @@ class AgregarContactoController: UIViewController {
     @IBOutlet weak var txtTelefono: UITextField!
     
     override func viewDidLoad() {
-        if contacto != nil {
-            txtNombre.text = contacto?.nombre
-            txtTelefono.text = contacto?.telefono
-        }
+        
+        
     }
     
     @IBAction func doTapAgregar(_ sender: Any) {
         if callBackAgregarContacto != nil {
+            contacto = Contacto(nombre: txtNombre.text ?? "nombre", telefono: txtTelefono.text ?? "nombre")
             callBackAgregarContacto!(contacto!)
+            self.navigationController?.popViewController(animated: true)
         }
     }
 }

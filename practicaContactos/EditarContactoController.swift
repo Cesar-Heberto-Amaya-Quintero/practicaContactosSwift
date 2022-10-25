@@ -12,7 +12,7 @@ class EditarContactoController: UIViewController {
     
     var contacto : Contacto?
     
-    var callBackAgregarContacto : ((Contacto) -> Void)?
+    var callBackEditarContacto : ((Contacto) -> Void)?
     
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtTelefono: UITextField!
@@ -25,6 +25,11 @@ class EditarContactoController: UIViewController {
     }
     
     @IBAction func doTapActualizar(_ sender: Any) {
-        
+        if callBackEditarContacto != nil {
+            contacto?.nombre = txtNombre.text!
+            contacto?.telefono = txtTelefono.text!
+            callBackEditarContacto!(contacto!)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }

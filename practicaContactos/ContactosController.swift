@@ -10,6 +10,7 @@ import UIKit
 
 class ContactosController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tvContactos: UITableView!
     var contactos: [Contacto] = []
     
     override func viewDidLoad() {
@@ -42,12 +43,28 @@ class ContactosController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destino = segue.destination as! AgregarContactoController
-        destino.callBackAgregarContacto = agregarContacto
+        
+        if segue.identifier == "agregarContacto" {
+            let destino = segue.destination as! AgregarContactoController
+            destino.callBackAgregarContacto = agregarContacto
+        }
+        
+        if segue.identifier == "editarContacto" {
+            let destino = segue.destination as! EditarContactoController
+            destino.contacto = contactos[tvContactos.indexPathForSelectedRow!.row]
+
+            destino.callBackEditarContacto = editarContacto
+        }
+        
     }
     
     func agregarContacto(contacto: Contacto){
         contactos.append(contacto)
+        tvContactos.reloadData()
+    }
+    
+    func editarContacto(contacto: Contacto){
+        tvContactos.reloadData()
     }
     
     
